@@ -1,12 +1,21 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import Navbar from './components/Navbar'
+import { Routes, Route } from 'react-router-dom'
+import Index from './pages/Index'
+import Register from './pages/Register'
 
 function App() {
 
   return (
     <>
-      <h1 className='text-3xl font-bold underline'>naber</h1>
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<Index />} />
+        <Route path='/register' element={<Register />} />
+      </Routes>
+
     </>
   )
 }
