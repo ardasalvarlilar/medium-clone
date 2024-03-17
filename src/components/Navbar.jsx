@@ -13,7 +13,7 @@ export default function Navbar() {
             <Link >Our Story</Link>
             <Link >Membership</Link>
             <Link >Write</Link>
-            <Link >Sign in</Link>
+            <Link to='/login'>Sign in</Link>
             <Link to='/register' className="bg-black text-white p-3 rounded-3xl">Get Started</Link>
           </div>
 

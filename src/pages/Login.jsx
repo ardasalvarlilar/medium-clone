@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 function Login() {
   return (
-    <div className='w-full flex justify-center items-center bg-yellow-400 h-screen'>
+    <div className='w-full flex flex-col justify-center items-center bg-yellow-400 h-screen'>
 
       <h2 className='font-bold text-2xl m-3'>Login</h2>
 
