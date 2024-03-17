@@ -27,7 +27,6 @@ function Register() {
     const response = await axios.post('https://medium-clone-server-production.up.railway.app/user/register', user, {
       headers: {
         'Content-Type': 'application/json',
-        'Origin': 'https://medium-clone-production-b38a.up.railway.app/',
       }
     })
 
