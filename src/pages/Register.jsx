@@ -24,13 +24,18 @@ function Register() {
   async function handleSubmit(e) {
     e.preventDefault()
 
-    const response = await axios.post('https://medium-clone-server-production.up.railway.app/user/register', user, {
-      headers: {
-        'Content-Type': 'application/json',
-      }
-    })
+    try {
+      const response = await axios.post('https://medium-clone-server-production.up.railway.app/user/register', user, {
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        withCredentials: true
+      })
 
-    console.log(response.data)
+      console.log(response.data)
+    } catch (err) {
+      console.log(err)
+    }
   }
 
 
