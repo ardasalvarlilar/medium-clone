@@ -26,9 +26,6 @@ function Register() {
 
     try {
       const response = await axios.post('https://medium-clone-server-production.up.railway.app/user/register', user, {
-        headers: {
-          'Content-Type': 'application/json',
-        },
         withCredentials: true
 
       })
